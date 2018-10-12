@@ -1,0 +1,35 @@
+#Items
+item.kaasmod:babyCowStomach.name=Kalveren maag
+item.kaasmod:saltWaterBucket.name=Emmer Zout Water
+item.kaasmod:dirtySalt.name=Vies zout
+item.kaasmod:cleanSalt.name=Schoon zout
+item.kaasmod:vinegarBucket.name=Emmer azijn
+item.kaasmod:knife.name=Mes
+item.kaasmod:stomachSlice.name=Maagreepje
+item.kaasmod:breadSlice.name=Sneetje Brood
+item.kaasmod:lacticAcidBucket.name=Emmer Melkzuur
+item.kaasmod:rennetBucket.name=Emmer Stremsel
+item.kaasmod:curdledMilkBucket.name=Emmer gestremde melk
+item.kaasmod:curdBucket.name=Emmer Wrongel
+item.kaasmod:cheeseSlice.name=Plakje Kaas
+item.kaasmod:cheeseBaconBread.name=Kaas-Ham Broodje
+item.kaasmod:cheeseBread.name=Broodje kaas
+item.kaasmod:tosti.name=Tosti
+item.kaasmod:cheeseBrick.name=Kaas Tegel
+item.kaasmod:cheeseSlicer.name=Kaasschaaf
+item.kaasmod:starter.name=Zuursel
+
+#Blocks
+tile.kaasmod:barrel.name=Ton
+tile.kaasmod:stirlingMachine.name=Roer Machine
+tile.kaasmod:saltOre.name=Zout Erts
+tile.kaasmod:cheeseBricks.name=Kaas Muur
+tile.kaasmod:smoothCheese.name=Vlakke Kaas
+tile.kaasmod:toaster.name=Tosti Ijzer
+tile.kaasmod:compressor.name=Pers
+tile.kaasmod:cheese.name=Kaas
+tile.kaasmod:youngCheese.name=Jonge Kaas
+tile.kaasmod:cheeseShelf.name=Kaasplank
+
+#Creativetab
+itemGroup.kaasmod=Steenbrink's Kaasmod

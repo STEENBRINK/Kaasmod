@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "kaasmod:items/salt_water_bucket"
+  }
+}

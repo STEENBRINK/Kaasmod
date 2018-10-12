@@ -1,0 +1,35 @@
+#Items
+item.babyCowStomach.name=Babycow's Stomach
+item.saltWaterBucket.name=Salt Water Bucket
+item.dirtySalt.name=Dirty Salt
+item.cleanSalt.name=Clean Salt
+item.vinegarBucket.name=Vinegar Bucket
+item.knife.name=Knife
+item.stomachSlice.name=Stomach Slice
+item.breadSlice.name=Bread Slice
+item.lacticAcidBucket.name=Lactic Acid Bucket
+item.rennetBucket.name=Rennet Bucket
+item.curdledMilkBucket.name=Curdled Milk Bucket
+item.curdBucket.name=Curd Bucket
+item.cheeseSlice.name=Cheese Slice
+item.cheeseBaconBread.name=Cheese Bacon Bread
+item.cheeseBread.name=Cheese Bread
+item.tosti.name=Tosti
+item.cheeseBrick.name=Cheese Brick
+item.cheeseSlicer.name=Cheese Slicer
+item.starter.name=Starter
+
+#Blocks
+tile.barrel.name=Barrel
+tile.stirlingMachine.name=Stirling Machine
+tile.saltOre.name=Salt Ore
+tile.cheeseBricks.name=Cheese Bricks
+tile.smoothCheese.name=Smooth Cheese
+tile.toaster.name=Toaster
+tile.compressor.name=Compressor
+tile.cheese.name=Cheese
+tile.youngCheese.name=Young Cheese
+tile.cheeseShelf.name=Cheese Shelf
+
+#Creativetab
+itemGroup.kaasmod=Kaasmod
