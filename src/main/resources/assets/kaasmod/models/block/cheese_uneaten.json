@@ -1,0 +1,22 @@
+{
+  "forge_marker": 1,
+  "textures": {
+    "particle": "kaasmod:blocks/cheese_side",
+    "bottom": "kaasmod:blocks/cheese_bottom",
+    "top": "kaasmod:blocks/cheese_top",
+    "side": "kaasmod:blocks/cheese_side"
+  },
+  "elements": [
+    {   "from": [ 1, 0, 1 ],
+      "to": [ 15, 8, 15 ],
+      "faces": {
+        "down":  { "texture": "#bottom", "cullface": "down" },
+        "up":    { "texture": "#top" },
+        "north": { "texture": "#side" },
+        "south": { "texture": "#side" },
+        "west":  { "texture": "#side" },
+        "east":  { "texture": "#side" }
+      }
+    }
+  ]
+}

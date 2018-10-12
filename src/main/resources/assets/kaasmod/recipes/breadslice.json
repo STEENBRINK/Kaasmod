@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bread"
+    },
+    {
+      "item": "kaasmod:knife"
+    }
+  ],
+  "result": {
+    "item": "kaasmod:breadslice",
+    "count": 2
+  }
+}

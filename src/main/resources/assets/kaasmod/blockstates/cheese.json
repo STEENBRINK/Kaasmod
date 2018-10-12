@@ -1,0 +1,45 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "textures": {
+      "particle": "kaasmod:blocks/cheese_side",
+
+      "bottom": "kaasmod:blocks/cheese_bottom",
+
+      "top": "kaasmod:blocks/cheese_top",
+
+      "side": "kaasmod:blocks/cheese_side",
+
+      "inside": "kaasmod:blocks/cheese_inside"
+
+    },
+    "model": "cake_uneaten",
+    "uvlock": true
+  },
+  "variants": {
+    "bites": {
+      0:{
+        "model":"cake_uneaten"
+      },
+      1:{
+        "model":"cake_slice1"
+      },
+      2:{
+        "model":"cake_slice2"
+      },
+      3:{
+        "model":"cake_slice3"
+      },
+      4:{
+        "model":"cake_slice4"
+      },
+      5:{
+        "model":"cake_slice5"
+      },
+      6:{
+        "model":"cake_slice6"
+      }
+    },
+    "inventory": [{}]
+  }
+}
