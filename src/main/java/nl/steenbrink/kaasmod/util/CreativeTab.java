@@ -2,7 +2,7 @@ package nl.steenbrink.kaasmod.util;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
-import nl.steenbrink.kaasmod.item.ModItems;
+import nl.steenbrink.kaasmod.init.ModItems;
 
 public class CreativeTab extends CreativeTabs {
     public CreativeTab(){

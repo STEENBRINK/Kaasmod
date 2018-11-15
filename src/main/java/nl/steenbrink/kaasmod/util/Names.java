@@ -65,4 +65,9 @@ public class Names {
         public static final int JANNEKE = 9050;
     }
 
+    public static class OreDict {
+        public static final String SALT_ORE_ORENAME = "oreSalt";
+        public static final String SALT_ITEM_ORENAME = "dustSalt";
+    }
+
 }

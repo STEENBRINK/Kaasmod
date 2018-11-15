@@ -3,6 +3,7 @@ package nl.steenbrink.kaasmod;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -10,11 +11,15 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import nl.steenbrink.kaasmod.block.ModBlocks;
-import nl.steenbrink.kaasmod.item.ModItems;
+import net.minecraftforge.fml.common.registry.GameRegistry;
+import nl.steenbrink.kaasmod.handler.EntityEventHandler;
+import nl.steenbrink.kaasmod.init.ModBlocks;
+import nl.steenbrink.kaasmod.init.ModItems;
 import nl.steenbrink.kaasmod.proxy.CommonProxy;
 import nl.steenbrink.kaasmod.util.CreativeTab;
+import nl.steenbrink.kaasmod.init.ModRecipes;
 import nl.steenbrink.kaasmod.util.Reference;
+import nl.steenbrink.kaasmod.handler.ModWorldGeneration;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -53,11 +58,14 @@ public class Kaasmod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         // Initialize the items, fluids and blocks
+        GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
     }
 
     @Mod.EventHandler
     public void init(FMLInitializationEvent event) {
         // Register event handlers
+        ModRecipes.init();
+        MinecraftForge.EVENT_BUS.register(new EntityEventHandler());
     }
 
     @Mod.EventHandler

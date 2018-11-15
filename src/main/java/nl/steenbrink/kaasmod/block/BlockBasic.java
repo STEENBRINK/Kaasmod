@@ -5,6 +5,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import nl.steenbrink.kaasmod.Kaasmod;
+import nl.steenbrink.kaasmod.util.Names;
 
 public class BlockBasic extends Block {
     protected String name;

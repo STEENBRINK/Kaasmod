@@ -1,14 +1,15 @@
-package nl.steenbrink.kaasmod.item;
+package nl.steenbrink.kaasmod.init;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
+import nl.steenbrink.kaasmod.item.*;
 import nl.steenbrink.kaasmod.util.Names;
 
 public class ModItems {
 
     //register basic items
     public static ItemBasic stomach = new ItemBasic(Names.Items.STOMACH);
-    public static ItemBasic cleanSalt = new ItemBasic(Names.Items.CLEAN_SALT);
+    public static ItemOre cleanSalt = new ItemOre(Names.Items.CLEAN_SALT, Names.OreDict.SALT_ITEM_ORENAME);
     public static ItemBasic dirtySalt = new ItemBasic(Names.Items.DIRTY_SALT);
     public static ItemBasic stomachSlice = new ItemBasic(Names.Items.STOMACH_SLICE);
     public static ItemBasic cheeseBrick = new ItemBasic(Names.Items.CHEESE_BRICK);
