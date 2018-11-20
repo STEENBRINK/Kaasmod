@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.fluids.FluidRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -14,6 +15,7 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import nl.steenbrink.kaasmod.handler.EntityEventHandler;
 import nl.steenbrink.kaasmod.init.ModBlocks;
+import nl.steenbrink.kaasmod.init.ModFluids;
 import nl.steenbrink.kaasmod.init.ModItems;
 import nl.steenbrink.kaasmod.proxy.CommonProxy;
 import nl.steenbrink.kaasmod.util.CreativeTab;
@@ -33,12 +35,16 @@ public class Kaasmod {
 
     public static final CreativeTab creativeTab = new CreativeTab();
     public static final Logger logger = LogManager.getLogger(Reference.MOD_ID);
+    static {
+        FluidRegistry.enableUniversalBucket();
+    }
 
     @Mod.EventBusSubscriber
     public static class RegistrationHandler{
 
         @SubscribeEvent
         public static void registerBlocks(RegistryEvent.Register<Block> event){
+            ModFluids.init();
             ModBlocks.register(event.getRegistry());
         }
 
@@ -58,6 +64,7 @@ public class Kaasmod {
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         // Initialize the items, fluids and blocks
+        ModBlocks.render();
         GameRegistry.registerWorldGenerator(new ModWorldGeneration(), 3);
     }
 

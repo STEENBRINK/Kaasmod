@@ -31,5 +31,14 @@ tile.cheese.name=Cheese
 tile.youngCheese.name=Young Cheese
 tile.cheeseShelf.name=Cheese Shelf
 
+#Fluids
+fluid.salt_water=Salt Water
+fluid.milk=Milk
+fluid.vinegar=Vinegar
+fluid.lactic_acid=Lactic Acid
+fluid.rennet=Rennet
+fluid.curdled_milk=Curdled Milk
+fluid.curd=Curd
+
 #Creativetab
 itemGroup.kaasmod=Kaasmod

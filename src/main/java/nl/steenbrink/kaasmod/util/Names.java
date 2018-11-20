@@ -35,14 +35,6 @@ public class Names {
         public static final String CHEESE_BREAD = "cheeseBread";
         public static final String TOSTI = "tosti";
 
-        //buckets
-        public static final String SALT_WATER_BUCKET = "saltWaterBucket";
-        public static final String VINEGAR_BUCKET = "vinegarBucket";
-        public static final String CURDLED_MILK_BUCKET = "curdledMilkBucket";
-        public static final String CURD_BUCKET = "curdBucket";
-        public static final String RENNET_BUCKET = "rennetBucket";
-        public static final String LACTIC_ACID_BUCKET = "lacticAcidBucket";
-
         //tools
         public static final String KNIFE = "knife";
         public static final String CHEESE_SLICER = "cheeseSlicer";
@@ -51,13 +43,13 @@ public class Names {
 
     public static class Fluids {
         public static final String MILK = "milk";
-        public static final String SALT_WATER = "saltWater";
+        public static final String SALT_WATER = "salt_water";
         public static final String VINEGAR = "vinegar";
-        public static final String LACTIC_ACID = "lacticAcid";
+        public static final String LACTIC_ACID = "lactic_acid";
         public static final String RENNET = "rennet";
-        public static final String CURDLED_MILK = "curdledMilk";
+        public static final String CURDLED_MILK = "curdled_milk";
         public static final String CURD = "curd";
-        public static final String CRAFTING_FLUID = "craftingFluid";
+        public static final String CRAFTING_FLUID = "crafting_fluid";
 
     }
 

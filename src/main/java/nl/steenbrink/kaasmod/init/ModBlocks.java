@@ -7,6 +7,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 import nl.steenbrink.kaasmod.block.BlockBasic;
 import nl.steenbrink.kaasmod.block.BlockCheese;
 import nl.steenbrink.kaasmod.block.BlockOre;
+import nl.steenbrink.kaasmod.block.fluid.BlockFluidBasic;
 import nl.steenbrink.kaasmod.util.Names;
 
 public class ModBlocks {
@@ -18,6 +19,14 @@ public class ModBlocks {
     public static BlockCheese cheese = new BlockCheese(Names.Blocks.CHEESE, false);
     public static BlockCheese youngCheese = new BlockCheese(Names.Blocks.YOUNG_CHEESE, true);
 
+    //fluidblocks
+    public static final BlockFluidBasic blockSaltWater = new BlockFluidBasic(ModFluids.fluidSaltWater, Material.WATER);
+    public static final BlockFluidBasic blockMilk = new BlockFluidBasic(ModFluids.fluidMilk, Material.WATER);
+    public static final BlockFluidBasic blockVinegar = new BlockFluidBasic(ModFluids.fluidVinegar, Material.WATER);
+    public static final BlockFluidBasic blockLacticAcid = new BlockFluidBasic(ModFluids.fluidLacticAcid, Material.WATER);
+    public static final BlockFluidBasic blockRennet = new BlockFluidBasic(ModFluids.fluidRennet, Material.WATER);
+    public static final BlockFluidBasic blockCurdledMilk = new BlockFluidBasic(ModFluids.fluidCurdledMilk, Material.WATER);
+    public static final BlockFluidBasic blockCurd = new BlockFluidBasic(ModFluids.fluidCurd, Material.WATER);
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
@@ -25,7 +34,14 @@ public class ModBlocks {
                 cheeseBricks,
                 smoothCheese,
                 cheese,
-                youngCheese
+                youngCheese,
+                blockCurd,
+                blockCurdledMilk,
+                blockRennet,
+                blockLacticAcid,
+                blockVinegar,
+                blockMilk,
+                blockSaltWater
         );
     }
 
@@ -35,7 +51,15 @@ public class ModBlocks {
                 cheeseBricks.createItemBlock(),
                 smoothCheese.createItemBlock(),
                 cheese.createItemBlock(),
-                youngCheese.createItemBlock()
+                youngCheese.createItemBlock(),
+                blockCurd.createItemBlock(),
+                blockCurdledMilk.createItemBlock(),
+                blockRennet.createItemBlock(),
+                blockLacticAcid.createItemBlock(),
+                blockVinegar.createItemBlock(),
+                blockMilk.createItemBlock(),
+                blockSaltWater.createItemBlock()
+
         );
     }
 
@@ -45,5 +69,22 @@ public class ModBlocks {
         smoothCheese.registerItemModel(Item.getItemFromBlock(smoothCheese));
         cheese.registerItemModel(Item.getItemFromBlock(cheese));
         youngCheese.registerItemModel(Item.getItemFromBlock(youngCheese));
+        blockCurd.registerItemModel(Item.getItemFromBlock(blockCurd));
+        blockCurdledMilk.registerItemModel(Item.getItemFromBlock(blockCurdledMilk));
+        blockRennet.registerItemModel(Item.getItemFromBlock(blockCurdledMilk));
+        blockLacticAcid.registerItemModel(Item.getItemFromBlock(blockLacticAcid));
+        blockVinegar.registerItemModel(Item.getItemFromBlock(blockVinegar));
+        blockMilk.registerItemModel(Item.getItemFromBlock(blockMilk));
+        blockSaltWater.registerItemModel(Item.getItemFromBlock(blockSaltWater));
+    }
+
+    public static void render(){
+        ModBlocks.blockVinegar.render();
+        ModBlocks.blockSaltWater.render();
+        ModBlocks.blockMilk.render();
+        ModBlocks.blockRennet.render();
+        ModBlocks.blockLacticAcid.render();
+        ModBlocks.blockCurdledMilk.render();
+        ModBlocks.blockCurd.render();
     }
 }
