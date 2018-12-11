@@ -33,7 +33,7 @@ tile.cheeseShelf.name=Cheese Shelf
 
 #Fluids
 fluid.salt_water=Salt Water
-fluid.milk=Milk
+fluid.fresh_milk=Fresh Milk
 fluid.vinegar=Vinegar
 fluid.lactic_acid=Lactic Acid
 fluid.rennet=Rennet

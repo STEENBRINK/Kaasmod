@@ -1,6 +1,11 @@
 package nl.steenbrink.kaasmod.init;
 
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemArmorStand;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidStack;
+import net.minecraftforge.fluids.FluidUtil;
 import net.minecraftforge.registries.IForgeRegistry;
 import nl.steenbrink.kaasmod.item.*;
 import nl.steenbrink.kaasmod.util.Names;
@@ -23,6 +28,13 @@ public class ModItems {
     public static ItemFoodBasic tosti = new ItemFoodBasic(Names.Items.TOSTI, 20, 1.8f, false);
 
     //register buckets
+    public static ItemStack curdBucket = FluidUtil.getFilledBucket(new FluidStack(ModFluids.fluidCurd, Fluid.BUCKET_VOLUME));
+    public static ItemStack curdledMilkBucket = FluidUtil.getFilledBucket(new FluidStack(ModFluids.fluidCurdledMilk, Fluid.BUCKET_VOLUME));
+    public static ItemStack freshMilkBucket = FluidUtil.getFilledBucket(new FluidStack(ModFluids.fluidFreshMilk, Fluid.BUCKET_VOLUME));
+    public static ItemStack lacticAcidBucket = FluidUtil.getFilledBucket(new FluidStack(ModFluids.fluidLacticAcid, Fluid.BUCKET_VOLUME));
+    public static ItemStack rennetBucket = FluidUtil.getFilledBucket(new FluidStack(ModFluids.fluidRennet, Fluid.BUCKET_VOLUME));
+    public static ItemStack saltWaterBucket = FluidUtil.getFilledBucket(new FluidStack(ModFluids.fluidSaltWater, Fluid.BUCKET_VOLUME));
+    public static ItemStack vinegarBucket = FluidUtil.getFilledBucket(new FluidStack(ModFluids.fluidVinegar, Fluid.BUCKET_VOLUME));
 
     //register tools
     public static ItemCheeseSlicer cheeseSlicer = new ItemCheeseSlicer();

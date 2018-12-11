@@ -7,7 +7,7 @@ import nl.steenbrink.kaasmod.util.Names;
 
 public class ModFluids {
     public static FluidBasic fluidSaltWater = new FluidBasic(Names.Fluids.SALT_WATER);
-    public static FluidBasic fluidMilk = new FluidBasic(Names.Fluids.MILK);
+    public static FluidBasic fluidFreshMilk = new FluidBasic(Names.Fluids.FRESH_MILK);
     public static FluidBasic fluidVinegar = new FluidBasic(Names.Fluids.VINEGAR);
     public static FluidBasic fluidLacticAcid = new FluidBasic(Names.Fluids.LACTIC_ACID);
     public static FluidBasic fluidRennet = new FluidBasic(Names.Fluids.RENNET);
@@ -17,7 +17,7 @@ public class ModFluids {
 
     public static void init() {
         FluidRegistry.registerFluid(fluidRennet);
-        FluidRegistry.registerFluid(fluidMilk);
+        FluidRegistry.registerFluid(fluidFreshMilk);
         FluidRegistry.registerFluid(fluidVinegar);
         FluidRegistry.registerFluid(fluidLacticAcid);
         FluidRegistry.registerFluid(fluidSaltWater);

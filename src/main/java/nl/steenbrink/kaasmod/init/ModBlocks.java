@@ -5,9 +5,11 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.IForgeRegistry;
 import nl.steenbrink.kaasmod.block.BlockBasic;
+import nl.steenbrink.kaasmod.block.BlockBasicStairs;
 import nl.steenbrink.kaasmod.block.BlockCheese;
 import nl.steenbrink.kaasmod.block.BlockOre;
-import nl.steenbrink.kaasmod.block.fluid.BlockFluidBasic;
+import nl.steenbrink.kaasmod.block.fluid.*;
+import nl.steenbrink.kaasmod.block.tile.BlockToaster;
 import nl.steenbrink.kaasmod.util.Names;
 
 public class ModBlocks {
@@ -20,13 +22,19 @@ public class ModBlocks {
     public static BlockCheese youngCheese = new BlockCheese(Names.Blocks.YOUNG_CHEESE, true);
 
     //fluidblocks
-    public static final BlockFluidBasic blockSaltWater = new BlockFluidBasic(ModFluids.fluidSaltWater, Material.WATER);
-    public static final BlockFluidBasic blockMilk = new BlockFluidBasic(ModFluids.fluidMilk, Material.WATER);
-    public static final BlockFluidBasic blockVinegar = new BlockFluidBasic(ModFluids.fluidVinegar, Material.WATER);
-    public static final BlockFluidBasic blockLacticAcid = new BlockFluidBasic(ModFluids.fluidLacticAcid, Material.WATER);
-    public static final BlockFluidBasic blockRennet = new BlockFluidBasic(ModFluids.fluidRennet, Material.WATER);
-    public static final BlockFluidBasic blockCurdledMilk = new BlockFluidBasic(ModFluids.fluidCurdledMilk, Material.WATER);
-    public static final BlockFluidBasic blockCurd = new BlockFluidBasic(ModFluids.fluidCurd, Material.WATER);
+    public static final BlockFluidBasic blockCurd = new BlockFluidBasic(ModFluids.fluidCurd, 1600);
+    public static final BlockFluidBasic blockCurdledMilk = new BlockFluidBasic(ModFluids.fluidCurdledMilk);
+    public static final BlockFluidBasic blockLacticAcid = new BlockFluidBasic(ModFluids.fluidLacticAcid);
+    public static final BlockFluidBasic blockFreshMilk = new BlockFluidBasic(ModFluids.fluidFreshMilk);
+    public static final BlockFluidBasic blockRennet = new BlockFluidBasic(ModFluids.fluidRennet);
+    public static final BlockFluidBasic blockSaltWater = new BlockFluidBasic(ModFluids.fluidSaltWater);
+    public static final BlockFluidBasic blockVinegar = new BlockFluidBasic(ModFluids.fluidVinegar);
+
+    //stairs
+    //public static final BlockBasicStairs cheeseBrickStairs = new BlockBasicStairs(cheeseBricks.getDefaultState());
+
+    //tileentities
+    public static BlockToaster toaster = new BlockToaster();
 
     public static void register(IForgeRegistry<Block> registry) {
         registry.registerAll(
@@ -40,8 +48,10 @@ public class ModBlocks {
                 blockRennet,
                 blockLacticAcid,
                 blockVinegar,
-                blockMilk,
-                blockSaltWater
+                blockFreshMilk,
+                blockSaltWater,
+                //cheeseBrickStairs,
+                toaster
         );
     }
 
@@ -57,9 +67,10 @@ public class ModBlocks {
                 blockRennet.createItemBlock(),
                 blockLacticAcid.createItemBlock(),
                 blockVinegar.createItemBlock(),
-                blockMilk.createItemBlock(),
-                blockSaltWater.createItemBlock()
-
+                blockFreshMilk.createItemBlock(),
+                blockSaltWater.createItemBlock(),
+                //cheeseBrickStairs.createItemBlock(),
+                toaster.createItemBlock()
         );
     }
 
@@ -74,17 +85,19 @@ public class ModBlocks {
         blockRennet.registerItemModel(Item.getItemFromBlock(blockCurdledMilk));
         blockLacticAcid.registerItemModel(Item.getItemFromBlock(blockLacticAcid));
         blockVinegar.registerItemModel(Item.getItemFromBlock(blockVinegar));
-        blockMilk.registerItemModel(Item.getItemFromBlock(blockMilk));
+        blockFreshMilk.registerItemModel(Item.getItemFromBlock(blockFreshMilk));
         blockSaltWater.registerItemModel(Item.getItemFromBlock(blockSaltWater));
+        //cheeseBrickStairs.registerItemModel(Item.getItemFromBlock(cheeseBrickStairs));
+        toaster.registerItemModel(Item.getItemFromBlock(toaster));
     }
 
     public static void render(){
-        ModBlocks.blockVinegar.render();
-        ModBlocks.blockSaltWater.render();
-        ModBlocks.blockMilk.render();
-        ModBlocks.blockRennet.render();
-        ModBlocks.blockLacticAcid.render();
-        ModBlocks.blockCurdledMilk.render();
-        ModBlocks.blockCurd.render();
+        blockCurd.render();
+        blockCurdledMilk.render();
+        blockLacticAcid.render();
+        blockFreshMilk.render();
+        blockRennet.render();
+        blockSaltWater.render();
+        blockVinegar.render();
     }
 }

@@ -42,7 +42,7 @@ public class Names {
     }
 
     public static class Fluids {
-        public static final String MILK = "milk";
+        public static final String FRESH_MILK = "fresh_milk";
         public static final String SALT_WATER = "salt_water";
         public static final String VINEGAR = "vinegar";
         public static final String LACTIC_ACID = "lactic_acid";

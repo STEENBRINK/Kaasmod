@@ -2,11 +2,11 @@
   "forge_marker": 1,
   "defaults": {
     "textures": {
-      "particle": "blocks/lactic_acid",
-      "all": "kaasmod:fluids/lactic_acid_flow"
+      "particle": "blocks/fresh_milk",
+      "all": "kaasmod:fluids/fresh_milk_flow"
     },
     "model": "forge:fluid",
-    "custom": { "fluid": "lactic_acid" },
+    "custom": { "fluid": "fresh_milk" },
     "uvlock": false
   },
   "variants": {
